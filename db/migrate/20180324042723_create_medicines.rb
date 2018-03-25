@@ -1,5 +1,4 @@
 class CreateMedicines < ActiveRecord::Migration[5.1]
-  mount_uploader :image, ImagesUploader
   def change
     create_table :medicines do |t|
       t.string :name
