@@ -1,0 +1,30 @@
+
+
+<p>
+  <b>薬剤名：<%= @medicine.name %></b>
+</p>
+
+<p>
+  <b>効果効能：<%= @medicine.efficacy %></b>
+</p>
+
+<p>
+  <b>メモ：<%= @medicine.memo %></b>
+</p>
+
+<p>
+  <b>残数：<%= @medicine.stock %></b>
+</p>
+
+<p>
+  <b>画像1：<img src="<%= @medicine.image1_url %>"></b>
+</p>
+
+<p>
+  <b>画像2：<img src="<%= @medicine.image2_url %>"></b>
+</p>
+
+<p>
+  <%= link_to "編集", edit_medicine_path(@medicine) %>
+  <%= link_to "削除", medicine_path(@medicine), method: :delete %>
+</p>

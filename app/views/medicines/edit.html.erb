@@ -1,0 +1,36 @@
+<h1>更新フォーム</h1>
+<%= form_with model: @medicine, local: true do |form| %>
+  <p>
+    薬剤名<br>
+    <%= form.text_field :name %>
+  </p>
+  <p>
+    効果、効能<br>
+    <%= form.text_field :efficacy %>
+  </p>
+  <p>
+    メモ<br>
+    <%= form.text_field :memo %>
+  </p>
+  <p>
+    残数<br>
+    <%= form.number_field :stock %>
+  </p>
+  <p>
+    画像1<br>
+    <%= form.text_field :image1 %>
+  </p>
+  <p>
+    画像2<br>
+    <%= form.text_field :image2 %>
+  </p>
+  <p>
+    病院ID<br>
+    <%= form.collection_select :hospital_id, Hospital.all, :id, :name, include_blank: true %>
+  </p>
+  <p>
+    <%= form.hidden_field :user_id, value: current_user.id %>
+  </p>
+
+  <%= form.submit "更新" %>
+<% end %>

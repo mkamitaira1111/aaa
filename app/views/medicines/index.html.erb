@@ -1,0 +1,11 @@
+<h1>患者情報</h1>
+
+<div class="col-lg-12">
+    <%= link_to '患者登録', new_medicine_path, class: "btn btn-default pull-right" %>
+  </div>
+
+<ul>
+  <% @medicines.each do |medicine| %>
+    <li><%= link_to medicine.hospital.name, medicine_path(medicine) %></li>
+  <% end %>
+</ul>

@@ -1,0 +1,8 @@
+<h1>病院登録フォーム</h1>
+<%= form_with model: @hospital, local: true do |form| %>
+<p>
+  病院名<br>
+  <%= form.text_field :name %>
+</p>
+<%= form.submit "登録" %>
+<% end %>
