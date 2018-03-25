@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  efficacy: MyString
+  memo: MyText
+  stock: 1
+  image1: MyString
+  image2: MyString
+  hospital_id: 1
+
+two:
+  name: MyString
+  efficacy: MyString
+  memo: MyText
+  stock: 1
+  image1: MyString
+  image2: MyString
+  hospital_id: 1
